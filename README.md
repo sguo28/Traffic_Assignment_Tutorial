@@ -23,21 +23,28 @@ scipy==1.11.4
 matplotlib==3.8.0
 ```
 
-### Install Jupiter Notebook
+#### Install Jupiter Notebook
 
 ```bash
 conda install -c conda-forge jupyterlab
 ```
 
-### 3. Run Jupyter Notebook
+#### Run Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-### 4. Run the Code
+### 3. Run the Code
 ```bash
 TA_Tutorial.ipynb
 ```
+
+### Supported Functions
+- [x] Frank-Wolfe Algorithm
+- [x] Method of Successive Averages (MSA)
+- [x] Path-based Algorithm (PBA)
+- [x] User Equilibrium (UE)
+- [ ] System Optimal (SO)
 
 
