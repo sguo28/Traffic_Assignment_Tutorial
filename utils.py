@@ -20,6 +20,7 @@ class Path:
         self.travel_time = None
     def update_travel_time(self, link_time):
         self.travel_time = sum([link_time[edge] for edge in self.traversed_edges])
+
 class TrafficAssignment:
     def __init__(self, file_path, od_path, node_attr, instance_name="sample", algorithm_name ="FW", eps=1e-3):
         G = self.create_network(file_path, node_attr)
@@ -331,11 +332,13 @@ class TrafficAssignment:
         save the UE cost function to the graph
         '''
         self.UE_sol = self.fftt*self.link_flow + self.capacity/(self.alpha+1)*self.fftt*self.beta*(self.link_flow/self.capacity)**(self.alpha+1)
+    
     def save_shortest_path(self,shortest_path):
         '''
         save the shortest path to the graph
         '''
         self.graph._shortest_path = shortest_path
+    
     @staticmethod
     def convex_combination(x, y, theta):
         return (1-theta)*x + theta*y
@@ -370,6 +373,7 @@ class TrafficAssignment:
         # return TTST/SPTT-1
 
         return tx/kd-1
+    
     def update_link_flow(self):
         '''
         updated link flow (according to the shortest path)
@@ -415,7 +419,8 @@ class TrafficAssignment:
 
     def bisection_search(self,x1,x2,eps=1e-8):
         '''
-        bisection search         for the optimal step size: lambda
+        bisection search         
+        for the optimal step size: lambda
         the goal is to minimize the gap
         '''
         l = 0
