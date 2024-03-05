@@ -1,5 +1,9 @@
 ## Traffic Assignment (TA) Tutorial
 
+### 0. Prerequisite
+- Install [Git](https://git-scm.com/downloads)
+- Install [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
+
 ### 1. Clone the repository
 
 ```bash
@@ -32,7 +36,7 @@ conda install -c conda-forge jupyterlab
 #### Run Jupyter Notebook
 
 ```bash
-jupyter notebook
+jupyter lab
 ```
 
 ### 3. Run the Code
