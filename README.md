@@ -1,4 +1,10 @@
 ## Traffic Assignment (TA) Tutorial
+The only MSA + FW + PBA code implementation you can find in Python. The implementation is based on the book [Transportation Network Analysis](https://sboyles.github.io/blubook.html) by Stephen D. Boyles, Nicholas E. Lownes, and Avinash Unnikrishnan. 
+
+Please note that the code is for educational purposes only. The code is not optimized for large-scale networks.
+
+If you find the code helpful, please consider giving it a star.
+
 
 ### 0. Prerequisite
 - Install [Git](https://git-scm.com/downloads)
