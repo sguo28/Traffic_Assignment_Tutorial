@@ -48,7 +48,7 @@ TA_FW.ipynb
 ### Supported Functions
 - [x] Frank-Wolfe Algorithm
 - [x] Method of Successive Averages (MSA)
-- [ ] Path-based Algorithm (PBA)
+- [x] Path-based Algorithm (PBA)
 - [x] User Equilibrium (UE)
 - [ ] System Optimal (SO)
 
